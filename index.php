@@ -7,8 +7,8 @@
         <body>
         <?php
 
-                //Uncomment the desired line to show the specified map
-                $mapType = 'pins';
+                ////Uncomment the desired line to show the specified map
+                //$mapType = 'pins';
                 //$mapType = 'get_coords';
                 
                 if($mapType == 'pins'): ?>
