@@ -6,10 +6,12 @@
         </head>
         <body>
         <?php
-        $mapType = 'pins';
-        //$mapType = 'get_coords'; 
-        if($mapType == 'pins'): 
-        ?>
+
+                //Uncomment the desired line to show the specified map
+                $mapType = 'pins';
+                //$mapType = 'get_coords';
+                
+                if($mapType == 'pins'): ?>
         <div id="MapLocations">
                 <div class="location">
                         <span class="id" style="display:none;">0</span>
@@ -24,9 +26,11 @@
         </div>
         <div id="map-canvas" style="height:300px"/>
         <?php elseif($mapType == 'get_coords'): ?>
-                <input id="LocationLatitude" value="">
-                <input id="LocationLongitude" value="">
-                <div id="map-canvas" style="height:300px"/>
+                <div style="margin: 10px">
+                        <input id="LocationLatitude" value="">
+                        <input id="LocationLongitude" value="">
+                </div>
+                <div id="map-canvas" style="height:300px; margin-top:10px"/>
         <?php endif; ?>
         </body>
 </html>
